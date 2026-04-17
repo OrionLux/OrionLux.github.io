@@ -73,7 +73,7 @@ body.cursor-hover .cursor {
   width: 50px; height: 50px;
   border-color: rgba(255 255 255 / .6);
 }
-@media (pointer: coarse) { .cursor, .cursor-dot { display: none; } body { cursor: auto; } }
+@media (pointer: coarse) { .cursor, .cursor-dot { display: none; } body { cursor: auto; } .product-card__zoom { display: none; } .product-card__slide img { cursor: default; } }
 
 /* ── Utility ────────────────────────────────────────────────── */
 .container {
@@ -200,7 +200,10 @@ body.cursor-hover .cursor {
   gap: 12px;
   color: var(--white);
   flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
+.navbar__logo img { -webkit-user-drag: none; }
 .navbar__logo svg { color: var(--white); }
 .navbar__logo-text { line-height: 1; }
 .navbar__logo-name {

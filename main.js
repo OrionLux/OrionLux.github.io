@@ -249,18 +249,20 @@
   prevBtn?.addEventListener('click', e => { e.stopPropagation(); showIndex(currentIndex - 1); });
   nextBtn?.addEventListener('click', e => { e.stopPropagation(); showIndex(currentIndex + 1); });
 
-  // Trigger from zoom buttons
+  // Trigger from zoom buttons (desktop only)
   document.querySelectorAll('.product-card__zoom').forEach(btn => {
     btn.addEventListener('click', () => {
+      if (window.matchMedia('(pointer: coarse)').matches) return;
       const card   = btn.closest('.product-card');
       const active = card.querySelector('.product-card__slide.active img');
       if (active) openLightbox(card, active);
     });
   });
 
-  // Trigger from clicking images directly
+  // Trigger from clicking images directly (desktop only)
   document.querySelectorAll('.product-card__slide img').forEach(img => {
     img.addEventListener('click', () => {
+      if (window.matchMedia('(pointer: coarse)').matches) return;
       const card = img.closest('.product-card');
       openLightbox(card, img);
     });
