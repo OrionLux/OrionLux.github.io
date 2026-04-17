@@ -188,9 +188,7 @@ body.cursor-hover .cursor {
   align-items: center;
   padding-inline: clamp(20px, 5vw, 56px);
   gap: 40px;
-  background: rgba(14 14 14 / .88);
-  backdrop-filter: blur(24px) saturate(1.4);
-  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  background: #0e0e0e;
   border-bottom: 1px solid var(--hairline);
   transition: background var(--transition), border-color var(--transition);
 }
@@ -1228,7 +1226,7 @@ body.cursor-hover .cursor {
   .hero__scroll { grid-column: 1; order: 3; justify-content: center; }
 
   .navbar__links { display: none; }
-  .navbar__burger { display: flex; }
+  .navbar__burger { display: flex; margin-left: auto; }
   .navbar__actions .btn--ghost { display: none; }
 }
 
