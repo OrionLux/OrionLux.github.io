@@ -26,7 +26,7 @@
   --radius:    2px;
   --transition: .28s cubic-bezier(.4,0,.2,1);
 
-  --nav-h: 68px;
+  --nav-h: 80px;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -541,7 +541,7 @@ body.cursor-hover .cursor {
 /* Gallery */
 .product-card__gallery {
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/5;
   overflow: hidden;
   background: var(--bg-raised);
 }
@@ -569,7 +569,7 @@ body.cursor-hover .cursor {
 /* real image support */
 .product-card__slide img {
   width: 100%; height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   cursor: zoom-in;
   user-select: none;
   -webkit-user-select: none;
