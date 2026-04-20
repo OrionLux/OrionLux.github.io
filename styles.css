@@ -1260,8 +1260,15 @@ body.cursor-hover .cursor {
   .hero__visual {
     grid-column: 1;
     order: 1;
+    justify-content: center;
   }
-  .hero__gem { width: clamp(170px, 48vw, 270px); }
+  .hero__gem { width: clamp(200px, 60vw, 300px); }
+  .hero__gem--two { display: none; }
+  .hero__gem:first-of-type::before {
+    background: radial-gradient(circle, rgba(220 205 180 / .10) 0%, transparent 70%);
+    filter: blur(40px);
+    inset: 0%;
+  }
   .hero__scroll { grid-column: 1; order: 3; justify-content: center; }
 
   .navbar__links { display: none; }
