@@ -1289,7 +1289,7 @@ body.cursor-hover .cursor {
     filter: blur(40px);
     inset: 0%;
   }
-  .hero__video-wrap { width: clamp(300px, 92vw, 500px); margin-right: 0; }
+  .hero__video-wrap { width: clamp(200px, 55vw, 320px); margin-right: 0; }
   .hero__scroll { grid-column: 1; order: 3; justify-content: center; }
 
   .navbar__links { display: none; }
