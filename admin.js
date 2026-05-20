@@ -69,6 +69,24 @@
     if (btn) { btn.disabled = false; btn.textContent = 'Guardar todo ●'; }
   }
 
+  async function doSaveAll() {
+    const btn = document.getElementById('admSaveAll');
+    if (btn) { btn.disabled = true; btn.textContent = 'Guardando…'; }
+    try {
+      await saveAllProducts();
+      if (btn) btn.textContent = 'Guardar todo';
+      admToast('Cambios guardados y publicados.');
+    } catch (err) {
+      admToast('Error al guardar: ' + err.message, true);
+      if (btn) { btn.disabled = false; btn.textContent = 'Guardar todo ●'; }
+    }
+  }
+
+  function bindSaveAll() {
+    const btn = document.getElementById('admSaveAll');
+    if (btn) btn.addEventListener('click', doSaveAll);
+  }
+
   /* ── GitHub API ─────────────────────────────────────────── */
   async function ghFetch(path, options = {}) {
     const res = await fetch(`https://api.github.com/repos/${ghOwner}/${ghRepo}/${path}`, {
@@ -232,20 +250,7 @@
       window.location.href = window.location.pathname;
     });
 
-    document.getElementById('admSaveAll').addEventListener('click', async () => {
-      const btn = document.getElementById('admSaveAll');
-      btn.disabled = true;
-      btn.textContent = 'Guardando…';
-      try {
-        await saveAllProducts();
-        btn.textContent = 'Guardar todo';
-        admToast('Cambios guardados y publicados.');
-      } catch (err) {
-        admToast('Error al guardar: ' + err.message, true);
-        btn.disabled = false;
-        btn.textContent = 'Guardar todo ●';
-      }
-    });
+    bindSaveAll();
 
     document.getElementById('admAddProduct').addEventListener('click', () => {
       renderProductForm(null, -1);
@@ -365,10 +370,9 @@
             <div class="adm-form__footer">
               <button type="button" class="adm-btn adm-btn--ghost" id="admCancelForm">Cancelar</button>
               <button type="submit" class="adm-btn adm-btn--primary" id="admApplyBtn">
-                <span id="admApplyLabel">${isNew ? 'Agregar a la lista' : 'Aplicar cambios'}</span>
+                <span id="admApplyLabel">${isNew ? 'Agregar producto' : 'Aplicar cambios'}</span>
               </button>
             </div>
-            <p class="adm-hint" style="text-align:right;margin-top:4px">Los cambios no se publican hasta que presiones <strong>Guardar todo</strong>.</p>
             <p class="adm-error" id="admFormError" hidden></p>
           </form>
         </main>
@@ -384,21 +388,7 @@
       renderProductList();
     });
 
-    // "Guardar todo" also works from the form page
-    document.getElementById('admSaveAll').addEventListener('click', async () => {
-      const btn = document.getElementById('admSaveAll');
-      btn.disabled = true;
-      btn.textContent = 'Guardando…';
-      try {
-        await saveAllProducts();
-        btn.textContent = 'Guardar todo';
-        admToast('Cambios guardados y publicados.');
-      } catch (err) {
-        admToast('Error al guardar: ' + err.message, true);
-        btn.disabled = false;
-        btn.textContent = 'Guardar todo ●';
-      }
-    });
+    bindSaveAll();
 
     /* ── Image state ── */
     let imageItems = p.images.map(img => ({ ...img, file: null, preview: img.src }));

@@ -1314,7 +1314,20 @@ body.adm-page {
   background: #0a0a0a;
   min-height: 100vh;
   overflow-y: auto;
+  cursor: auto;
 }
+body.adm-page * { cursor: auto; }
+body.adm-page button,
+body.adm-page label,
+body.adm-page a,
+body.adm-page select,
+body.adm-page input[type="file"] { cursor: pointer; }
+body.adm-page input[type="text"],
+body.adm-page input[type="password"],
+body.adm-page input[type="number"],
+body.adm-page textarea { cursor: text; }
+body.adm-page .cursor,
+body.adm-page .cursor-dot { display: none; }
 
 /* ── Layout ─────────────────────────────────────────────────── */
 .adm-layout {
@@ -1530,12 +1543,12 @@ body.adm-page {
 .adm-btn--sm { padding: 7px 14px; font-size: 12px; }
 
 .adm-btn--primary {
-  background: var(--gold);
+  background: #ffffff;
   color: #0e0e0e;
   font-weight: 500;
 }
-.adm-btn--primary:hover { background: #e8c97e; }
-.adm-btn--primary:disabled { opacity: .5; cursor: default; }
+.adm-btn--primary:hover { background: #e0e0e0; }
+.adm-btn--primary:disabled { opacity: .35; cursor: default; }
 
 .adm-btn--ghost {
   background: transparent;
