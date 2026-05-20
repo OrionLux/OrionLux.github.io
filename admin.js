@@ -84,7 +84,9 @@
 
   function bindSaveAll() {
     const btn = document.getElementById('admSaveAll');
-    if (btn) btn.addEventListener('click', doSaveAll);
+    if (!btn) return;
+    if (dirty) { btn.disabled = false; btn.textContent = 'Guardar todo ●'; }
+    btn.addEventListener('click', doSaveAll);
   }
 
   /* ── GitHub API ─────────────────────────────────────────── */
