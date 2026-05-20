@@ -1,71 +1,175 @@
 [
   {
     "id": "studs",
-    "category": "Aretes · Studs",
+    "category": "Aretes Â· Studs",
     "name": "Arito redondo",
     "description": "Tornillo de seguridad en plata 925 con moissanita VVS corte redondo brillante. Acabado rodio. Certificado GRA incluido.",
     "images": [
-      { "src": "images/aritos front.png", "alt": "Aritos front", "fit": "contain" },
-      { "src": "images/aritos certi.png", "alt": "Aritos certi", "fit": "cover" }
+      {
+        "src": "images/aritos front.png",
+        "alt": "Aritos front",
+        "fit": "contain"
+      },
+      {
+        "src": "images/aritos certi.png",
+        "alt": "Aritos certi",
+        "fit": "cover"
+      }
     ],
     "sizes": [
-      { "label": "4 mm", "price": 45000, "inStock": true },
-      { "label": "5 mm", "price": 45000, "inStock": true },
-      { "label": "6 mm", "price": 50000, "inStock": true },
-      { "label": "8 mm", "price": 60000, "inStock": true }
+      {
+        "label": "4 mm",
+        "price": 50000,
+        "inStock": true
+      },
+      {
+        "label": "5 mm",
+        "price": 50000,
+        "inStock": true
+      },
+      {
+        "label": "6 mm",
+        "price": 60000,
+        "inStock": true
+      },
+      {
+        "label": "8 mm",
+        "price": 70000,
+        "inStock": true
+      }
     ],
     "inStock": true
   },
   {
     "id": "tennis",
-    "category": "Pulsera · Tennis",
+    "category": "Pulsera Â· Tennis",
     "name": "Pulsera Tenis",
-    "description": "Plata 925 con moissanita VVS en engaste pavé corrido. Broche de caja. Brillo máximo. Certificado GRA Incluido.",
+    "description": "Plata 925 con moissanita VVS en engaste pavÃ© corrido. Broche de caja. Brillo mÃ¡ximo. Certificado GRA Incluido.",
     "images": [
-      { "src": "images/raqueta.png", "alt": "Raqueta", "fit": "contain" },
-      { "src": "images/pulsera tennis mano.png", "alt": "Pulsera tennis mano", "fit": "contain" }
+      {
+        "src": "images/raqueta.png",
+        "alt": "Raqueta",
+        "fit": "contain"
+      },
+      {
+        "src": "images/pulsera tennis mano.png",
+        "alt": "Pulsera tennis mano",
+        "fit": "contain"
+      }
     ],
     "sizes": [
-      { "label": "2 mm", "price": 170000, "inStock": true },
-      { "label": "3 mm", "price": 200000, "inStock": true },
-      { "label": "4 mm", "price": 240000, "inStock": true }
+      {
+        "label": "2 mm",
+        "price": 170000,
+        "inStock": true
+      },
+      {
+        "label": "3 mm",
+        "price": 200000,
+        "inStock": true
+      },
+      {
+        "label": "4 mm",
+        "price": 240000,
+        "inStock": true
+      }
     ],
     "inStock": true
   },
   {
     "id": "ring1",
-    "category": "Anillo · Solitario",
+    "category": "Anillo Â· Solitario",
     "name": "Anillo redondo",
-    "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clásico. Ideal para compromiso. Certificado GRA Incluido",
+    "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clÃ¡sico. Ideal para compromiso. Certificado GRA Incluido",
     "images": [
-      { "src": "images/anillo arriba.png", "alt": "Anillo arriba", "fit": "contain" },
-      { "src": "images/anillo certi.png", "alt": "Anillo certi", "fit": "cover" }
+      {
+        "src": "images/anillo arriba.png",
+        "alt": "Anillo arriba",
+        "fit": "contain"
+      },
+      {
+        "src": "images/anillo certi.png",
+        "alt": "Anillo certi",
+        "fit": "cover"
+      }
     ],
     "sizes": [
-      { "label": "6",   "price": 90000, "inStock": true },
-      { "label": "6,5", "price": 90000, "inStock": true },
-      { "label": "7",   "price": 90000, "inStock": true },
-      { "label": "7,5", "price": 95000, "inStock": true },
-      { "label": "8",   "price": 95000, "inStock": true }
+      {
+        "label": "6",
+        "price": 90000,
+        "inStock": true
+      },
+      {
+        "label": "6,5",
+        "price": 90000,
+        "inStock": true
+      },
+      {
+        "label": "7",
+        "price": 90000,
+        "inStock": true
+      },
+      {
+        "label": "7,5",
+        "price": 95000,
+        "inStock": true
+      },
+      {
+        "label": "8",
+        "price": 95000,
+        "inStock": true
+      }
     ],
     "inStock": true
   },
   {
     "id": "ring2",
-    "category": "Anillo · Eternity",
-    "name": "Banda Eternity Pavé",
-    "description": "Plata 925 con moissanita VVS en engaste pavé media vuelta. Versátil, ideal para apilados o uso diario. Certificado GRA Incluido.",
+    "category": "Anillo Â· Eternity",
+    "name": "Banda Eternity PavÃ©",
+    "description": "Plata 925 con moissanita VVS en engaste pavÃ© media vuelta. VersÃ¡til, ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
-      { "src": "images/banda diagonal.png", "alt": "Banda diagonal", "fit": "contain" },
-      { "src": "images/banda frente.png",   "alt": "Banda frente",   "fit": "contain" },
-      { "src": "images/banda certi.png",    "alt": "Banda certi",    "fit": "contain" }
+      {
+        "src": "images/banda diagonal.png",
+        "alt": "Banda diagonal",
+        "fit": "contain"
+      },
+      {
+        "src": "images/banda frente.png",
+        "alt": "Banda frente",
+        "fit": "contain"
+      },
+      {
+        "src": "images/banda certi.png",
+        "alt": "Banda certi",
+        "fit": "contain"
+      }
     ],
     "sizes": [
-      { "label": "6",   "price": 65000, "inStock": true },
-      { "label": "6,5", "price": 65000, "inStock": true },
-      { "label": "7",   "price": 65000, "inStock": true },
-      { "label": "7,5", "price": 70000, "inStock": true },
-      { "label": "8",   "price": 70000, "inStock": true }
+      {
+        "label": "6",
+        "price": 65000,
+        "inStock": true
+      },
+      {
+        "label": "6,5",
+        "price": 65000,
+        "inStock": true
+      },
+      {
+        "label": "7",
+        "price": 65000,
+        "inStock": true
+      },
+      {
+        "label": "7,5",
+        "price": 70000,
+        "inStock": true
+      },
+      {
+        "label": "8",
+        "price": 70000,
+        "inStock": true
+      }
     ],
     "inStock": true
   }
