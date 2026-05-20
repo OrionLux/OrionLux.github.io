@@ -248,7 +248,15 @@
   <!-- ░░ TOAST ░░ -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="main.js"></script>
-  <script src="admin.js"></script>
+  <script>
+    (function() {
+      var v = Date.now();
+      ['main.js','admin.js'].forEach(function(s) {
+        var el = document.createElement('script');
+        el.src = s + '?v=' + v;
+        document.body.appendChild(el);
+      });
+    })();
+  </script>
 </body>
 </html>
