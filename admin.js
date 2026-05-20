@@ -13,12 +13,15 @@
   const ADMIN_PASSWORD = 'beltranmisalvador';
   const PRODUCTS_PATH  = 'products.json';
   const IMAGES_PATH    = 'images/';
+  const GH_OWNER       = 'OrionLux';
+  const GH_REPO        = 'OrionLux.github.io';
+  const GH_BRANCH      = 'master';
 
   /* ── State ──────────────────────────────────────────────── */
   let ghToken      = '';
-  let ghOwner      = '';
-  let ghRepo       = '';
-  let ghBranch     = 'master';
+  let ghOwner      = GH_OWNER;
+  let ghRepo       = GH_REPO;
+  let ghBranch     = GH_BRANCH;
   let products     = [];   // working copy — mutated in place
   let productsSha  = '';
   let dirty        = false;  // unsaved changes?
@@ -154,16 +157,6 @@
               <input type="password" id="admToken" class="adm-input" placeholder="ghp_..." required autocomplete="off"/>
               <p class="adm-hint">Token con permisos <code>contents:write</code>.</p>
             </div>
-            <div class="adm-grid-2">
-              <div class="adm-field">
-                <label class="adm-label">Repositorio (usuario/repo)</label>
-                <input type="text" id="admRepoInput" class="adm-input" placeholder="OrionLux/OrionLux.github.io" required/>
-              </div>
-              <div class="adm-field">
-                <label class="adm-label">Branch</label>
-                <input type="text" id="admBranchInput" class="adm-input" value="master"/>
-              </div>
-            </div>
             <button type="submit" class="adm-btn adm-btn--primary adm-btn--full" id="admLoginBtn">
               <span id="admLoginLabel">Ingresar</span>
             </button>
@@ -175,13 +168,11 @@
 
     document.getElementById('admLoginForm').addEventListener('submit', async e => {
       e.preventDefault();
-      const pw      = document.getElementById('admPassword').value;
-      const token   = document.getElementById('admToken').value.trim();
-      const repoVal = document.getElementById('admRepoInput').value.trim();
-      const branch  = document.getElementById('admBranchInput').value.trim() || 'master';
-      const errEl   = document.getElementById('admLoginError');
-      const label   = document.getElementById('admLoginLabel');
-      const btn     = document.getElementById('admLoginBtn');
+      const pw    = document.getElementById('admPassword').value;
+      const token = document.getElementById('admToken').value.trim();
+      const errEl = document.getElementById('admLoginError');
+      const label = document.getElementById('admLoginLabel');
+      const btn   = document.getElementById('admLoginBtn');
 
       errEl.hidden = true;
 
@@ -190,15 +181,8 @@
         errEl.hidden = false;
         return;
       }
-      if (!repoVal.includes('/')) {
-        errEl.textContent = 'Formato: usuario/repositorio';
-        errEl.hidden = false;
-        return;
-      }
 
-      [ghOwner, ghRepo] = repoVal.split('/');
-      ghToken  = token;
-      ghBranch = branch;
+      ghToken = token;
       label.textContent = 'Conectando…';
       btn.disabled = true;
 
