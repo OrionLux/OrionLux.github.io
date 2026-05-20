@@ -60,17 +60,17 @@
     "sizes": [
       {
         "label": "2 mm",
-        "price": 220000,
+        "price": 200000,
         "inStock": true
       },
       {
         "label": "3 mm",
-        "price": 250000,
+        "price": 230000,
         "inStock": true
       },
       {
         "label": "4 mm",
-        "price": 290000,
+        "price": 260000,
         "inStock": true
       }
     ],
