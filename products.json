@@ -1,7 +1,7 @@
 [
   {
     "id": "studs",
-    "category": "Aretes ÃÂ· Studs",
+    "category": "Aretes ÃÂÃÂ· Studs",
     "name": "Arito redondo",
     "description": "Tornillo de seguridad en plata 925 con moissanita VVS corte redondo brillante. Acabado rodio. Certificado GRA incluido.",
     "images": [
@@ -42,9 +42,9 @@
   },
   {
     "id": "tennis",
-    "category": "Pulsera ÃÂ· Tennis",
+    "category": "Pulsera Tennis",
     "name": "Pulsera Tenis",
-    "description": "Plata 925 con moissanita VVS en engaste pavÃÂ© corrido. Broche de caja. Brillo mÃÂ¡ximo. Certificado GRA Incluido.",
+    "description": "Plata 925 con moissanitas VVS engarzadas a mano. Broche de caja. Brillo maximo. Certificado GRA Incluido.",
     "images": [
       {
         "src": "images/raqueta.png",
@@ -78,9 +78,9 @@
   },
   {
     "id": "ring1",
-    "category": "Anillo ÃÂ· Solitario",
+    "category": "Anillo ÃÂÃÂ· Solitario",
     "name": "Anillo redondo",
-    "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clÃÂ¡sico. Ideal para compromiso. Certificado GRA Incluido",
+    "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clÃÂÃÂ¡sico. Ideal para compromiso. Certificado GRA Incluido",
     "images": [
       {
         "src": "images/anillo arriba.png",
@@ -124,9 +124,9 @@
   },
   {
     "id": "ring2",
-    "category": "Anillo ÃÂ· Eternity",
-    "name": "Banda Eternity PavÃÂ©",
-    "description": "Plata 925 con moissanita VVS en engaste pavÃÂ© media vuelta. VersÃÂ¡til, ideal para apilados o uso diario. Certificado GRA Incluido.",
+    "category": "Anillo ÃÂÃÂ· Eternity",
+    "name": "Banda Eternity Pave",
+    "description": "Plata 925 con moissanita VVS en engaste pave media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
       {
         "src": "images/banda diagonal.png",
