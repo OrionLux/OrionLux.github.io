@@ -1,7 +1,7 @@
 [
   {
     "id": "studs",
-    "category": "Aretes ÃÂÃÂ· Studs",
+    "category": "Aritos - studs",
     "name": "Arito redondo",
     "description": "Tornillo de seguridad en plata 925 con moissanita VVS corte redondo brillante. Acabado rodio. Certificado GRA incluido.",
     "images": [
@@ -78,9 +78,9 @@
   },
   {
     "id": "ring1",
-    "category": "Anillo ÃÂÃÂ· Solitario",
+    "category": "Anillo Solitario",
     "name": "Anillo redondo",
-    "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clÃÂÃÂ¡sico. Ideal para compromiso. Certificado GRA Incluido",
+    "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clasico, Ideal para compromiso. Certificado GRA Incluido",
     "images": [
       {
         "src": "images/anillo arriba.png",
@@ -124,7 +124,7 @@
   },
   {
     "id": "ring2",
-    "category": "Anillo ÃÂÃÂ· Eternity",
+    "category": "Anillo Eternity",
     "name": "Banda Eternity Pave",
     "description": "Plata 925 con moissanita VVS en engaste pave media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
