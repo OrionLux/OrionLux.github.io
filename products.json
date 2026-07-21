@@ -189,26 +189,5 @@
       }
     ],
     "inStock": true
-  },
-  {
-    "id": "cadena-cruz",
-    "category": "Cadenas",
-    "name": "Cadena Cruz",
-    "description": "",
-    "images": [
-      {
-        "src": "images/1784663693915-362ea315-57ee-4eed-b91e-95db2fb2bbc1.jfif",
-        "alt": "362ea315-57ee-4eed-b91e-95db2fb2bbc1",
-        "fit": "contain"
-      }
-    ],
-    "sizes": [
-      {
-        "label": "",
-        "price": 100000,
-        "inStock": true
-      }
-    ],
-    "inStock": true
   }
 ]
