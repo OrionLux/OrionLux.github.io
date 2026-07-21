@@ -17,10 +17,30 @@
       }
     ],
     "sizes": [
-      { "label": "4 mm", "price": 50000, "inStock": true, "stock": 3 },
-      { "label": "5 mm", "price": 50000, "inStock": true, "stock": 3 },
-      { "label": "6 mm", "price": 60000, "inStock": true, "stock": 3 },
-      { "label": "8 mm", "price": 70000, "inStock": true, "stock": 3 }
+      {
+        "label": "4 mm",
+        "price": 50000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "5 mm",
+        "price": 50000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "6 mm",
+        "price": 60000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "8 mm",
+        "price": 70000,
+        "inStock": true,
+        "stock": 3
+      }
     ],
     "inStock": true
   },
@@ -42,9 +62,24 @@
       }
     ],
     "sizes": [
-      { "label": "2 mm", "price": 200000, "inStock": true, "stock": 3 },
-      { "label": "3 mm", "price": 230000, "inStock": true, "stock": 3 },
-      { "label": "4 mm", "price": 260000, "inStock": true, "stock": 3 }
+      {
+        "label": "2 mm",
+        "price": 200000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "3 mm",
+        "price": 230000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "4 mm",
+        "price": 260000,
+        "inStock": true,
+        "stock": 3
+      }
     ],
     "inStock": true
   },
@@ -66,18 +101,43 @@
       }
     ],
     "sizes": [
-      { "label": "6",   "price": 100000, "inStock": true, "stock": 3 },
-      { "label": "6,5", "price": 100000, "inStock": true, "stock": 3 },
-      { "label": "7",   "price": 100000, "inStock": true, "stock": 3 },
-      { "label": "7,5", "price": 105000, "inStock": true, "stock": 3 },
-      { "label": "8",   "price": 105000, "inStock": true, "stock": 3 }
+      {
+        "label": "6",
+        "price": 100000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "6,5",
+        "price": 100000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "7",
+        "price": 100000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "7,5",
+        "price": 105000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "8",
+        "price": 105000,
+        "inStock": true,
+        "stock": 3
+      }
     ],
     "inStock": true
   },
   {
     "id": "ring2",
     "category": "Anillo Eternity",
-    "name": "Eternity Pavé",
+    "name": "Eternity PavÃ©",
     "description": "Plata 925 con moissanita VVS en engaste pave media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
       {
@@ -97,11 +157,57 @@
       }
     ],
     "sizes": [
-      { "label": "6",   "price": 70000, "inStock": true, "stock": 3 },
-      { "label": "6,5", "price": 70000, "inStock": true, "stock": 3 },
-      { "label": "7",   "price": 70000, "inStock": true, "stock": 3 },
-      { "label": "7,5", "price": 75000, "inStock": true, "stock": 3 },
-      { "label": "8",   "price": 75000, "inStock": true, "stock": 3 }
+      {
+        "label": "6",
+        "price": 70000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "6,5",
+        "price": 70000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "7",
+        "price": 70000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "7,5",
+        "price": 75000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "8",
+        "price": 75000,
+        "inStock": true,
+        "stock": 3
+      }
+    ],
+    "inStock": true
+  },
+  {
+    "id": "cadena-cruz",
+    "category": "Cadenas",
+    "name": "Cadena Cruz",
+    "description": "",
+    "images": [
+      {
+        "src": "images/1784663693915-362ea315-57ee-4eed-b91e-95db2fb2bbc1.jfif",
+        "alt": "362ea315-57ee-4eed-b91e-95db2fb2bbc1",
+        "fit": "contain"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "",
+        "price": 100000,
+        "inStock": true
+      }
     ],
     "inStock": true
   }
