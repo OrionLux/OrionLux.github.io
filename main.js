@@ -4,6 +4,20 @@
 
 'use strict';
 
+/* ── Meta Pixel helper ──────────────────────────────────────── */
+function trackPixel(event, params) {
+  if (typeof fbq === 'function') fbq('track', event, params);
+}
+
+/* ── UTM capture ────────────────────────────────────────────── */
+const _utmParams = (function() {
+  const sp = new URLSearchParams(window.location.search);
+  const keys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  const found = {};
+  keys.forEach(k => { if (sp.has(k)) found[k] = sp.get(k); });
+  return found;
+})();
+
 /* ── Custom cursor ─────────────────────────────────────────── */
 (function initCursor() {
   const cursor = document.getElementById('cursor');
@@ -133,7 +147,10 @@ function buildProductCard(p, index) {
     const cls = ['size-btn'];
     if (i === 0) cls.push('active');
     if (!s.inStock) cls.push('size-out');
-    return `<button class="${cls.join(' ')}" data-price="${s.price}" data-label="${s.label}"${!s.inStock ? ' disabled' : ''}>${s.label}</button>`;
+    const stockAttr = (s.stock != null) ? ` data-stock="${s.stock}"` : '';
+    const urgency   = (s.inStock && s.stock != null && s.stock <= 3)
+      ? `<span class="size-btn__stock">¡Quedan ${s.stock}!</span>` : '';
+    return `<button class="${cls.join(' ')}" data-price="${s.price}" data-label="${s.label}"${stockAttr}${!s.inStock ? ' disabled' : ''}>${s.label}${urgency}</button>`;
   }).join('');
 
   const outClass = !p.inStock ? ' out-of-stock' : '';
@@ -238,10 +255,20 @@ function initSizeSelector() {
       btn.addEventListener('click', () => {
         btns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+        const price = parseInt(btn.dataset.price) || 0;
+        const card  = btn.closest('.product-card');
+        const name  = card?.querySelector('.product-card__name')?.textContent?.trim() || '';
+        trackPixel('ViewContent', {
+          content_name: name + ' — ' + btn.dataset.label,
+          content_ids: [card?.dataset.product || ''],
+          content_type: 'product',
+          value: price / 100,
+          currency: 'ARS'
+        });
         if (!amountEl) return;
         amountEl.classList.add('updating');
         setTimeout(() => {
-          amountEl.textContent = parseInt(btn.dataset.price).toLocaleString('es-AR');
+          amountEl.textContent = price.toLocaleString('es-AR');
           amountEl.classList.remove('updating');
         }, 180);
       });
@@ -334,6 +361,16 @@ function initCart() {
   function openDrawer()  { drawer.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
   function closeDrawer() { drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
 
+  waBtn?.addEventListener('click', () => {
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    trackPixel('InitiateCheckout', {
+      content_ids: cart.map(i => i.id),
+      num_items: cart.length,
+      value: total / 100,
+      currency: 'ARS'
+    });
+  });
+
   fab.addEventListener('click', openDrawer);
   closeBtn?.addEventListener('click', closeDrawer);
   overlay?.addEventListener('click', closeDrawer);
@@ -368,7 +405,10 @@ function initCart() {
     footerEl.style.display = '';
 
     const lines = cart.map((item, i) => `${i + 1}. ${item.name} — ${item.size} — $${item.price.toLocaleString('es-AR')}`);
-    waBtn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hola! Me interesa hacer un pedido en Orion Lux:\n\n${lines.join('\n')}\n\nTotal: $${total.toLocaleString('es-AR')}`)}`;
+    const utmSuffix = Object.keys(_utmParams).length
+      ? '\n\n[' + Object.entries(_utmParams).map(([k,v]) => `${k}=${v}`).join(', ') + ']'
+      : '';
+    waBtn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hola! Me interesa hacer un pedido en Orion Lux:\n\n${lines.join('\n')}\n\nTotal: $${total.toLocaleString('es-AR')}${utmSuffix}`)}`;
 
     itemsEl.querySelectorAll('.cart-item__remove').forEach(btn => {
       btn.addEventListener('click', () => { cart.splice(parseInt(btn.dataset.index), 1); renderCart(); });
@@ -385,6 +425,13 @@ function initCart() {
     const size   = active?.dataset.label || '';
     const price  = parseInt(active?.dataset.price) || 0;
     cart.push({ id: btn.dataset.product, name, size, price });
+    trackPixel('AddToCart', {
+      content_name: name + ' — ' + size,
+      content_ids: [btn.dataset.product],
+      content_type: 'product',
+      value: price / 100,
+      currency: 'ARS'
+    });
     renderCart();
     showToast(`${name} agregado al carrito`);
     fab.style.transform = 'scale(1.2)';

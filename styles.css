@@ -1807,3 +1807,22 @@ body.adm-page .cursor-dot { display: none; }
   text-decoration: line-through;
   cursor: not-allowed;
 }
+
+/* ── stock urgency label inside size button ─────────────────── */
+.size-btn {
+  position: relative;
+}
+.size-btn__stock {
+  display: block;
+  font-size: 9px;
+  letter-spacing: .04em;
+  color: #e8a87c;
+  line-height: 1.2;
+  margin-top: 2px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.size-btn.active .size-btn__stock {
+  color: var(--bg);
+  opacity: .75;
+}
