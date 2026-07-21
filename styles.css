@@ -701,11 +701,11 @@ body.cursor-hover .cursor {
   font-size: 9px;
   letter-spacing: .25em;
   text-transform: uppercase;
-  color: #e8a87c;
+  color: var(--off);
   background: rgba(14 14 14 / .78);
   backdrop-filter: blur(8px);
   padding: 5px 12px;
-  border: 1px solid rgba(232 168 124 / .35);
+  border: 1px solid var(--hairline);
   border-radius: var(--radius);
   pointer-events: none;
 }
