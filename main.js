@@ -148,9 +148,7 @@ function buildProductCard(p, index) {
     if (i === 0) cls.push('active');
     if (!s.inStock) cls.push('size-out');
     const stockAttr = (s.stock != null) ? ` data-stock="${s.stock}"` : '';
-    const urgency   = (s.inStock && s.stock != null && s.stock <= 3)
-      ? `<span class="size-btn__stock">¡Quedan ${s.stock}!</span>` : '';
-    return `<button class="${cls.join(' ')}" data-price="${s.price}" data-label="${s.label}"${stockAttr}${!s.inStock ? ' disabled' : ''}>${s.label}${urgency}</button>`;
+    return `<button class="${cls.join(' ')}" data-price="${s.price}" data-label="${s.label}"${stockAttr}${!s.inStock ? ' disabled' : ''}>${s.label}</button>`;
   }).join('');
 
   const outClass = !p.inStock ? ' out-of-stock' : '';
@@ -168,6 +166,9 @@ function buildProductCard(p, index) {
         </button>
       </div>
       <span class="product-card__badge">GRA Cert.</span>
+      ${(p.inStock && p.sizes.some(s => s.stock != null && s.stock <= 3))
+        ? `<span class="product-card__stock-badge">¡Quedan ${Math.min(...p.sizes.filter(s => s.inStock && s.stock != null).map(s => s.stock))}!</span>`
+        : ''}
       <button class="product-card__zoom" aria-label="Ver imagen ampliada">
         <svg viewBox="0 0 20 20" fill="none"><path d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z" stroke="currentColor" stroke-width="1.5"/><path d="M17 17l-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M6 8h4M8 6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>

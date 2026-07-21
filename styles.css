@@ -695,9 +695,24 @@ body.cursor-hover .cursor {
   border-radius: var(--radius);
 }
 
-.product-card__zoom {
+.product-card__stock-badge {
   position: absolute;
   top: 14px; right: 14px;
+  font-size: 9px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: #e8a87c;
+  background: rgba(14 14 14 / .78);
+  backdrop-filter: blur(8px);
+  padding: 5px 12px;
+  border: 1px solid rgba(232 168 124 / .35);
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+
+.product-card__zoom {
+  position: absolute;
+  top: 50px; right: 14px;
   width: 32px; height: 32px;
   display: flex; align-items: center; justify-content: center;
   background: rgba(14 14 14 / .7);
@@ -1808,21 +1823,3 @@ body.adm-page .cursor-dot { display: none; }
   cursor: not-allowed;
 }
 
-/* ── stock urgency label inside size button ─────────────────── */
-.size-btn {
-  position: relative;
-}
-.size-btn__stock {
-  display: block;
-  font-size: 9px;
-  letter-spacing: .04em;
-  color: #e8a87c;
-  line-height: 1.2;
-  margin-top: 2px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-.size-btn.active .size-btn__stock {
-  color: var(--bg);
-  opacity: .75;
-}
