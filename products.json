@@ -90,14 +90,19 @@
     "description": "Plata 925 con moissanita VVS corte redondo brillante. Engaste 4 garras clasico, Ideal para compromiso. Certificado GRA Incluido",
     "images": [
       {
-        "src": "images/anillo arriba.png",
-        "alt": "Anillo arriba",
+        "src": "images/1784701825971-photo-2026-07-09-13-45-44.jpg",
+        "alt": "PHOTO-2026-07-09-13-45-44",
         "fit": "contain"
       },
       {
-        "src": "images/anillo certi.png",
-        "alt": "Anillo certi",
-        "fit": "cover"
+        "src": "images/1784701828128-anillo-arriba.png",
+        "alt": "anillo arriba",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784701836459-anillo-certi-1.png",
+        "alt": "anillo certi (1)",
+        "fit": "contain"
       }
     ],
     "sizes": [
@@ -121,13 +126,13 @@
       },
       {
         "label": "7,5",
-        "price": 105000,
+        "price": 100000,
         "inStock": true,
         "stock": 3
       },
       {
         "label": "8",
-        "price": 105000,
+        "price": 100000,
         "inStock": true,
         "stock": 3
       }
