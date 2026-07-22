@@ -146,24 +146,19 @@
     "description": "Plata 925 con moissanita VVS en engaste Pavè media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
       {
-        "src": "images/banda diagonal.png",
-        "alt": "Banda diagonal",
-        "fit": "contain"
-      },
-      {
-        "src": "images/banda frente.png",
-        "alt": "Banda frente",
-        "fit": "contain"
-      },
-      {
-        "src": "images/banda certi.png",
-        "alt": "Banda certi",
-        "fit": "contain"
-      },
-      {
         "src": "images/1784701568005-photo-2026-07-09-13-45-45.jpg",
         "alt": "PHOTO-2026-07-09-13-45-45",
         "fit": "cover"
+      },
+      {
+        "src": "images/1784702066864-banda-frente.png",
+        "alt": "banda frente",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784702070131-banda-certi.png",
+        "alt": "banda certi",
+        "fit": "contain"
       }
     ],
     "sizes": [
