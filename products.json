@@ -51,13 +51,18 @@
     "description": "Plata 925 con moissanitas VVS engarzadas a mano. Broche de caja. Brillo maximo. Certificado GRA Incluido.",
     "images": [
       {
-        "src": "images/raqueta.png",
-        "alt": "Raqueta",
+        "src": "images/1784701177419-photo-2026-07-09-13-41-25.jpg",
+        "alt": "PHOTO-2026-07-09-13-41-25",
         "fit": "contain"
       },
       {
-        "src": "images/pulsera tennis mano.png",
-        "alt": "Pulsera tennis mano",
+        "src": "images/1784701179512-texto-del-p-rrafo.png",
+        "alt": "Texto del párrafo",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784701182406-tennis-bracelet.png",
+        "alt": "Tennis bracelet",
         "fit": "contain"
       }
     ],
@@ -137,7 +142,7 @@
   {
     "id": "ring2",
     "category": "Anillo Eternity",
-    "name": "Eternity PavÃ©",
+    "name": "Eternity PavÃÂ©",
     "description": "Plata 925 con moissanita VVS en engaste pave media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
       {
