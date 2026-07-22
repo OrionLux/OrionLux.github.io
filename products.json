@@ -1,19 +1,19 @@
 [
   {
     "id": "studs",
-    "category": "Aritos - studs",
+    "category": "Aros- studs",
     "name": "Aros 4 puntas",
     "description": "Tornillo de seguridad en plata 925 con moissanita VVS corte redondo brillante. Acabado rodio. Certificado GRA incluido.",
     "images": [
       {
-        "src": "images/aritos front.png",
-        "alt": "Aritos front",
+        "src": "images/1784702615846-chatgpt-image-22-jul-2026-03-41-35.png",
+        "alt": "ChatGPT Image 22 jul 2026, 03_41_35",
         "fit": "contain"
       },
       {
-        "src": "images/aritos certi.png",
-        "alt": "Aritos certi",
-        "fit": "cover"
+        "src": "images/1784702619398-aritos-certi.png",
+        "alt": "aritos certi",
+        "fit": "contain"
       }
     ],
     "sizes": [
@@ -25,7 +25,7 @@
       },
       {
         "label": "5 mm",
-        "price": 50000,
+        "price": 55000,
         "inStock": true,
         "stock": 3
       },
