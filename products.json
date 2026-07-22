@@ -202,17 +202,17 @@
     "description": "Colgante solitario con Moissanita redonda, engastada en plata 925 con baño de rodio. Cadena incluida. Certificado GRA incluido.",
     "images": [
       {
-        "src": "images/1784703397865-ed3515ec-62d2-4e8f-8258-7bb8c09b1ebb.jpeg",
-        "alt": "ed3515ec-62d2-4e8f-8258-7bb8c09b1ebb",
+        "src": "images/1784704668418-carrusel-algunas-fotos-a-p-2.png",
+        "alt": "Carrusel + algunas fotos. A.P (2)",
         "fit": "contain"
       },
       {
-        "src": "images/1784703399617-img-5718.jpg",
-        "alt": "IMG_5718",
+        "src": "images/1784704671326-carrusel-algunas-fotos-a-p-3.png",
+        "alt": "Carrusel + algunas fotos. A.P (3)",
         "fit": "contain"
       },
       {
-        "src": "images/1784703401655-0341a59d-7c72-4092-80d2-d6f69ca23824.jpg",
+        "src": "images/1784704674108-0341a59d-7c72-4092-80d2-d6f69ca23824.jpg",
         "alt": "0341a59d-7c72-4092-80d2-d6f69ca23824",
         "fit": "contain"
       }
@@ -226,6 +226,37 @@
       {
         "label": "0.5ct",
         "price": 90000,
+        "inStock": true
+      }
+    ],
+    "inStock": true
+  },
+  {
+    "id": "anillo-wave-ajustable",
+    "category": "Anillo Ajustable",
+    "name": "Anillo Wave Ajustable",
+    "description": "Anillo moissanita redonda, en plata 925 con baño de rodio. Ajustable: se adapta a distintos talles sin necesidad de medición previa. Certificado GRA incluido.",
+    "images": [
+      {
+        "src": "images/1784704125372-carrusel-algunas-fotos-a-p.png",
+        "alt": "Carrusel + algunas fotos. A.P",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784704128000-carrusel-algunas-fotos-a-p-1.png",
+        "alt": "Carrusel + algunas fotos. A.P (1)",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784704130381-img-5720.jpg",
+        "alt": "IMG_5720",
+        "fit": "contain"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "",
+        "price": 80000,
         "inStock": true
       }
     ],
