@@ -194,5 +194,41 @@
       }
     ],
     "inStock": true
+  },
+  {
+    "id": "colgante-solitario-redondo",
+    "category": "Colgantes",
+    "name": "Colgante Solitario Redondo",
+    "description": "Colgante solitario con Moissanita redonda, engastada en plata 925 con baño de rodio. Cadena incluida. Certificado GRA incluido.",
+    "images": [
+      {
+        "src": "images/1784703397865-ed3515ec-62d2-4e8f-8258-7bb8c09b1ebb.jpeg",
+        "alt": "ed3515ec-62d2-4e8f-8258-7bb8c09b1ebb",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784703399617-img-5718.jpg",
+        "alt": "IMG_5718",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784703401655-0341a59d-7c72-4092-80d2-d6f69ca23824.jpg",
+        "alt": "0341a59d-7c72-4092-80d2-d6f69ca23824",
+        "fit": "contain"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "1ct",
+        "price": 100000,
+        "inStock": true
+      },
+      {
+        "label": "0.5ct",
+        "price": 90000,
+        "inStock": true
+      }
+    ],
+    "inStock": true
   }
 ]
