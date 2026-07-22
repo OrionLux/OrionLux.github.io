@@ -164,31 +164,31 @@
     "sizes": [
       {
         "label": "6",
-        "price": 70000,
+        "price": 80000,
         "inStock": true,
         "stock": 3
       },
       {
         "label": "6,5",
-        "price": 70000,
+        "price": 80000,
         "inStock": true,
         "stock": 3
       },
       {
         "label": "7",
-        "price": 70000,
+        "price": 80000,
         "inStock": true,
         "stock": 3
       },
       {
         "label": "7,5",
-        "price": 70000,
+        "price": 80000,
         "inStock": true,
         "stock": 3
       },
       {
         "label": "8",
-        "price": 70000,
+        "price": 80000,
         "inStock": true,
         "stock": 3
       }
