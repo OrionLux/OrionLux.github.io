@@ -287,5 +287,31 @@
       }
     ],
     "inStock": true
+  },
+  {
+    "id": "aros-hoops-13mm",
+    "category": "Aros",
+    "name": "Aros Hoops 13mm",
+    "description": "Aritos hoops de plata 925 con baño de rodio, pavé de Moissanita disponibles en 13mm. Certificado GRA incluido. Los aretes son de cierre click.",
+    "images": [
+      {
+        "src": "images/1784961990905-carrusel-algunas-fotos-a-p-5.png",
+        "alt": "Carrusel + algunas fotos. A.P (5)",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784961994816-unnamed.jpg",
+        "alt": "unnamed",
+        "fit": "contain"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "13mm",
+        "price": 70000,
+        "inStock": true
+      }
+    ],
+    "inStock": true
   }
 ]
