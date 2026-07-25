@@ -261,5 +261,31 @@
       }
     ],
     "inStock": true
+  },
+  {
+    "id": "aros-hoops-11mm",
+    "category": "Aros",
+    "name": "Aros Hoops 11mm",
+    "description": "Aritos hoops de plata 925 con baño de rodio, pavé de Moissanita disponibles en 11mm. Certificado GRA incluido. Los aretes son de cierre click.",
+    "images": [
+      {
+        "src": "images/1784961641920-carrusel-algunas-fotos-a-p-4.png",
+        "alt": "Hoops 11mm",
+        "fit": "contain"
+      },
+      {
+        "src": "images/1784961645825-chatgpt-image-25-jul-2026-03-14-58-a-m.png",
+        "alt": "hoops en mujer 11mm",
+        "fit": "contain"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "11mm",
+        "price": 60000,
+        "inStock": true
+      }
+    ],
+    "inStock": true
   }
 ]
