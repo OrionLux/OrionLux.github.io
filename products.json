@@ -19,24 +19,18 @@
     "sizes": [
       {
         "label": "4 mm",
-        "price": 50000,
-        "inStock": true,
-        "stock": 3
-      },
-      {
-        "label": "5 mm",
-        "price": 55000,
-        "inStock": true,
-        "stock": 3
-      },
-      {
-        "label": "6 mm",
         "price": 60000,
         "inStock": true,
         "stock": 3
       },
       {
-        "label": "8 mm",
+        "label": "5 mm",
+        "price": 65000,
+        "inStock": true,
+        "stock": 3
+      },
+      {
+        "label": "6 mm",
         "price": 70000,
         "inStock": true,
         "stock": 3
@@ -57,7 +51,7 @@
       },
       {
         "src": "images/1784701179512-texto-del-p-rrafo.png",
-        "alt": "Texto del párrafo",
+        "alt": "Texto del pÃ¡rrafo",
         "fit": "contain"
       }
     ],
@@ -141,9 +135,9 @@
   },
   {
     "id": "ring2",
-    "category": "Anillo Pavè",
+    "category": "Anillo PavÃ¨",
     "name": "Eternity",
-    "description": "Plata 925 con moissanita VVS en engaste Pavè media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
+    "description": "Plata 925 con moissanita VVS en engaste PavÃ¨ media vuelta. Ideal para apilados o uso diario. Certificado GRA Incluido.",
     "images": [
       {
         "src": "images/1784701568005-photo-2026-07-09-13-45-45.jpg",
@@ -199,7 +193,7 @@
     "id": "colgante-solitario-redondo",
     "category": "Colgantes",
     "name": "Colgante Solitario Redondo",
-    "description": "Colgante solitario con Moissanita redonda, engastada en plata 925 con baño de rodio. Cadena incluida. Certificado GRA incluido.",
+    "description": "Colgante solitario con Moissanita redonda, engastada en plata 925 con baÃ±o de rodio. Cadena incluida. Certificado GRA incluido.",
     "images": [
       {
         "src": "images/1784704668418-carrusel-algunas-fotos-a-p-2.png",
@@ -220,12 +214,12 @@
     "sizes": [
       {
         "label": "1ct",
-        "price": 100000,
+        "price": 110000,
         "inStock": true
       },
       {
         "label": "0.5ct",
-        "price": 90000,
+        "price": 100000,
         "inStock": true
       }
     ],
@@ -235,7 +229,7 @@
     "id": "anillo-wave-ajustable",
     "category": "Anillo Ajustable",
     "name": "Anillo Wave Ajustable",
-    "description": "Anillo moissanita redonda, en plata 925 con baño de rodio. Ajustable: se adapta a distintos talles sin necesidad de medición previa. Certificado GRA incluido.",
+    "description": "Anillo moissanita redonda, en plata 925 con baÃ±o de rodio. Ajustable: se adapta a distintos talles sin necesidad de mediciÃ³n previa. Certificado GRA incluido.",
     "images": [
       {
         "src": "images/1784704125372-carrusel-algunas-fotos-a-p.png",
@@ -266,7 +260,7 @@
     "id": "aros-hoops-11mm",
     "category": "Aros",
     "name": "Aros Hoops 11mm",
-    "description": "Aritos hoops de plata 925 con baño de rodio, pavé de Moissanita disponibles en 11mm. Certificado GRA incluido. Los aretes son de cierre click.",
+    "description": "Aritos hoops de plata 925 con baÃ±o de rodio, pavÃ© de Moissanita disponibles en 11mm. Certificado GRA incluido. Los aretes son de cierre click.",
     "images": [
       {
         "src": "images/1784961641920-carrusel-algunas-fotos-a-p-4.png",
@@ -282,7 +276,7 @@
     "sizes": [
       {
         "label": "11mm",
-        "price": 60000,
+        "price": 65000,
         "inStock": true
       }
     ],
@@ -292,7 +286,7 @@
     "id": "aros-hoops-13mm",
     "category": "Aros",
     "name": "Aros Hoops 13mm",
-    "description": "Aritos hoops de plata 925 con baño de rodio, pavé de Moissanita disponibles en 13mm. Certificado GRA incluido. Los aretes son de cierre click.",
+    "description": "Aritos hoops de plata 925 con baÃ±o de rodio, pavÃ© de Moissanita disponibles en 13mm. Certificado GRA incluido. Los aretes son de cierre click.",
     "images": [
       {
         "src": "images/1784961990905-carrusel-algunas-fotos-a-p-5.png",
